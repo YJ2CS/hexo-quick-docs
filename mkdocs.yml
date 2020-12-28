@@ -20,15 +20,15 @@
 
 #==================== Personal information ===================================
 # Project information
-site_name: CS-Notes
-site_url: https://YJ2CS.github.io/CS-Notes
+site_name: template-conf-docs
+site_url: https://YJ2CS.github.io/template-conf-docs
 site_author: YJ2CS
 site_description: >-
-  Help you to learn Java,Python,C++ and Others
+  to learn template-conf-docs
 
 # Repository
-repo_name: YJ2CS/la-blog
-repo_url: https://github.com/YJ2CS/CS-Notes
+repo_name: YJ2CS/emplate-conf-docs
+repo_url: https://github.com/YJ2CS/emplate-conf-docs
 edit_uri: ""
 
 # Copyright
@@ -84,9 +84,23 @@ plugins:
   - minify:
       minify_html: true
   # foam templete, add autolinks
+  # see https://github.com/Jackiexiao/mkdocs-roamlinks-plugin
   - roamlinks
+  - rss:
+      abstract_chars_count: 160
+      feed_ttl: 1440
+      length: 20
+      date_from_meta:
+        as_creation: "date"
+        as_update: false
+        datetime_format: "%Y-%m-%d %H:%M"
+      image: https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png
   - exclude:
       glob:
+        #- exclude/this/path/*
+        - _drafts/*
+        - _daily/*
+        - _template/*
         - "*.tmp"
         - "*.pdf"
         - "*.gz"
