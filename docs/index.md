@@ -19,9 +19,9 @@ date updated: '2020-12-26T20:19:22+08:00'
 
 这里是站点导航，为了视图和反向链接的查找方便。
 ## mkdocs
-[[cs-notes-foam-mkdocs]]
-[[cs-notes-foam-mkdocs-en]]
-[[mkdocs文档搭建配置]]
+[[README-zh]]
+[[README-en]]
+
 ## hexo
 [[项目安装与配置]]
 [[写文章]]
