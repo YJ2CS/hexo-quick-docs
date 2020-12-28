@@ -1,0 +1,200 @@
+# Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+#==================== Personal information ===================================
+# Project information
+site_name: CS-Notes
+site_url: https://YJ2CS.github.io/CS-Notes
+site_author: YJ2CS
+site_description: >-
+  Help you to learn Java,Python,C++ and Others
+
+# Repository
+repo_name: YJ2CS/la-blog
+repo_url: https://github.com/YJ2CS/CS-Notes
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2020 - 2020 YJ2CS
+
+# ================= theme Configuration =====================
+theme: # 自定义主题：通过安装python包的方式添加主题，requirements.txt文件中已经有material这个主题所需依赖
+  #  name: null
+  #  custom_dir: material
+  name: material
+  # 404 page
+  static_templates:
+    - 404.html
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+  # 中文 zh ，解决中文搜索问题
+  # Default values, taken from mkdocs_theme.yml
+  language: zh
+  features: # 特性
+    - navigation.expand #激活时，左侧栏将默认展开所有可折叠小节，因此用户不必手动执行此操作
+    - navigation.instant #激活即时加载时，所有内部链接的点击将截获，并通过XHR发送，而无需完全重新加载页面
+    - navigation.tabs # 激活选项卡时，顶级部分将呈现在大屏幕上标题下方的菜单层中（但当侧边栏隐藏时不会）
+    - header.autohide #自动隐藏顶部，给阅读留下空间
+  palette: # 调色板
+    scheme: slate
+    primary: teal
+    accent: green
+  font: # 字体
+    text: Roboto
+    code: Roboto Mono
+  # icon和徽标
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+# ================= theme Configuration END=====================
+
+# ================== docs_dir Configuration ============================
+# 源文档markdown文件的目录。 这可以是相对目录，在这种情况下，它相对于包含配置文件的目录进行解析，或者它可以是来自本地文件系统根目录的绝对目录路径。
+# 默认值： 'docs'
+docs_dir: 'docs'
+# docs_dir: 'source/_posts'
+# 添加额外css支持
+extra_css:
+
+extra_javascript:
+  # 添加ajax支持，渲染数学公式
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+
+#====================== mkdocs Plugins =========================
+plugins:
+  - rss
+  - search
+  - minify:
+      minify_html: true
+  # foam templete, add autolinks
+  - roamlinks
+  - exclude:
+      glob:
+        - "*.tmp"
+        - "*.pdf"
+        - "*.gz"
+      regex:
+        - '.*\.(tmp|bin|tar)$'
+  - redirects: # 重定向
+      redirect_maps:
+#        extensions/metadata.md: reference/meta-tags.md
+#        extensions/permalinks.md: setup/setting-up-navigation.md #permalink
+#        plugins/revision-date.md: setup/adding-a-git-repository.md #revision-date
+#        plugins/search.md: setup/setting-up-site-search.md
+#        releases/4.md: upgrading.md #upgrading-from-4x-to-5x
+#        releases/5.md: upgrading.md #upgrading-from-3x-to-4x
+#        releases/changelog.md: changelog.md
+#        setup/adding-social-links.md: setup/setting-up-the-footer.md
+#        sponsorship.md: insiders.md
+
+#==================== social 定制社交信息 ====================
+# use font awesome icons
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/YJ2CS
+#    - icon: fontawesome/brands/gitter
+#      link: https://gitter.im/squidfunk/mkdocs-material
+#    - icon: fontawesome/brands/docker
+#      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+#    - icon: fontawesome/brands/twitter
+#      link: https://twitter.com/squidfunk
+#    - icon: fontawesome/brands/linkedin
+#      link: https://linkedin.com/in/squidfunk/
+#    - icon: fontawesome/brands/instagram
+#      link: https://instagram.com/squidfunk
+
+
+# ====================== Markdown扩展 Extensions ==========================
+markdown_extensions:
+  - admonition #告诫
+  - abbr
+  - attr_list # https://squidfunk.github.io/mkdocs-material/reference/images/
+  # foam templete
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - def_list
+  - footnotes
+  - meta
+  - toc: #目录
+      permalink: true #标题title右边点击定位到顶部的按钮
+      separator: "_"
+      slugify: !!python/name:pymdownx.slugs.uslugify # 解决中文标题解析问题
+      # 启用pymdownx支持
+  - pymdownx.arithmatex: # 算术数
+      generic: true
+  - pymdownx.betterem: # 智能启用,它提供了两种模式来控制星号和下划线粗体和粗体语法：打开时智能，如果关闭时正常
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight # 代码高亮
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed  # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  # foam templete
+  - nl2br # newline-to-break
+
+# ============================== Google Analytics ==============================
+google_analytics:
+  - UA-180490240-1
+  - auto
+
+#============================== Page tree 页面树  ================================
+# 使用foam+romlinks插件后，这里的功能不需要再配置，但也可以手动更改
+#================================================================================
+#nav:
+#- 主页:
+#  - 怎样学习C++,Python,Java等高级程序设计语言: 怎样学习Cpp_Python_Java等高级程序设计语言.md
+#  - upgrading: changelog/update.md
+#- 怎样学Java:
+#  - Java学习路线: Java/pre/0_3_Java学习路线.md
+#  - 笔记目录: Java/pre/0_4.md
+#  - 已经过时的一些知识: Java/pre/0_6_已经过时的一些知识.md
+#- Java学习笔记
+#  - 第一阶段：基础知识:
+#    - 第1部分_2周:
+#      - 1.1 Java程序设计概述: Java/notes/1_基础知识_1_1.md
+#      - 1.2 Java程序设计环境: Java/notes/1_基础知识_1_2.md
+#      - 1.3 Java的基础程序设计结构: Java/notes/1_基础知识_1_3.md
+#    - 第2部分_2周:
+#      - 2.1 类和对象: Java/notes/1_基础知识_2_1.md
+#      - 2.2 接口与抽象类: Java/notes/1_基础知识_2_2.md

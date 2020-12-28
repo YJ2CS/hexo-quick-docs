@@ -1,0 +1,13 @@
+# Direct dependencies
+mkdocs>=1.1.2
+# plugin and themes dependencies
+mkdocs-material>=6.1.6
+mkdocs-roamlinks-plugin>=0.1.3
+mkdocs-exclude>=1.0.2
+mkdocs-rss-plugin>=0.9.0
+mkdocs-minify-plugin>=0.3.0
+mkdocs-redirects>=1.0.1
+# Markdown-Toolbox
+# Markdown-Toolbox==0.0.9
+# PySide2==5.15.2
+# shiboken2==5.15.2
