@@ -181,7 +181,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-  # foam templete
+  # 新增加结尾的一个空行
   - nl2br # newline-to-break
 
 # ============================== Google Analytics ==============================
