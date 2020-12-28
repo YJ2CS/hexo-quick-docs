@@ -20,16 +20,22 @@
 
 #==================== Personal information ===================================
 # Project information
-site_name: template-conf-docs
-site_url: https://YJ2CS.github.io/template-conf-docs
+site_name: conf-docs
+site_url: https://YJ2CS.github.io/conf-docs
 site_author: YJ2CS
 site_description: >-
-  to learn template-conf-docs
+  to learn conf-docs
 
 # Repository
-repo_name: YJ2CS/emplate-conf-docs
-repo_url: https://github.com/YJ2CS/emplate-conf-docs
+repo_name: YJ2CS/conf-docs
+repo_url: https://github.com/YJ2CS/conf-docs
 edit_uri: ""
+
+# ================== docs_dir Configuration ============================
+# 源文档markdown文件的目录。 这可以是相对目录，在这种情况下，它相对于包含配置文件的目录进行解析，或者它可以是来自本地文件系统根目录的绝对目录路径。
+# 默认值： 'docs'
+docs_dir: 'docs'
+# docs_dir: 'source/_posts'
 
 # Copyright
 copyright: Copyright &copy; 2020 - 2020 YJ2CS
@@ -46,7 +52,7 @@ theme: # 自定义主题：通过安装python包的方式添加主题，requirem
   include_search_page: false
   search_index_only: true
   # 中文 zh ，解决中文搜索问题
-  # Default values, taken from mkdocs_theme.yml
+  # Default: en , taken from mkdocs_theme.yml
   language: zh
   features: # 特性
     - navigation.expand #激活时，左侧栏将默认展开所有可折叠小节，因此用户不必手动执行此操作
@@ -61,22 +67,13 @@ theme: # 自定义主题：通过安装python包的方式添加主题，requirem
     text: Roboto
     code: Roboto Mono
   # icon和徽标
-  favicon: assets/favicon.png
+  favicon: custom/favicon.jpg
+# From Material 5.x on, icons are inlined into the HTML and CSS as SVGs. Some
+# icons that are part of the HTML can be configured and replaced
   icon:
     logo: logo
 # ================= theme Configuration END=====================
 
-# ================== docs_dir Configuration ============================
-# 源文档markdown文件的目录。 这可以是相对目录，在这种情况下，它相对于包含配置文件的目录进行解析，或者它可以是来自本地文件系统根目录的绝对目录路径。
-# 默认值： 'docs'
-docs_dir: 'docs'
-# docs_dir: 'source/_posts'
-# 添加额外css支持
-extra_css:
-
-extra_javascript:
-  # 添加ajax支持，渲染数学公式
-  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
 #====================== mkdocs Plugins =========================
 plugins:
@@ -86,6 +83,7 @@ plugins:
   # foam templete, add autolinks
   # see https://github.com/Jackiexiao/mkdocs-roamlinks-plugin
   - roamlinks
+  # 增开rss支持，see https://guts.github.io/mkdocs-rss-plugin/
   - rss:
       abstract_chars_count: 160
       feed_ttl: 1440
@@ -190,6 +188,13 @@ markdown_extensions:
 google_analytics:
   - UA-180490240-1
   - auto
+
+# ====================================添加额外css/js支持=============================
+extra_css:
+
+extra_javascript:
+  # 添加ajax支持，渲染数学公式
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
 #============================== Page tree 页面树  ================================
 # 使用foam+romlinks插件后，这里的功能不需要再配置，但也可以手动更改
