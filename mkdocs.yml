@@ -80,7 +80,6 @@ extra_javascript:
 
 #====================== mkdocs Plugins =========================
 plugins:
-  - rss
   - search
   - minify:
       minify_html: true
