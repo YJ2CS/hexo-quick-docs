@@ -6,6 +6,7 @@ on:
       - main
 jobs:
   deploy:
+    environment: ghdocs
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -14,3 +15,5 @@ jobs:
           python-version: 3.x
       - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force
+        env:
+          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
