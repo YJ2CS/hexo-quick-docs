@@ -1,6 +1,6 @@
 ---
-title: 站点导航
-url: 站点导航
+title: English-Version
+url: English-Version
 author: YJ2CS
 avatar: /custom/avatar.webp
 authorLink: YJ2CS.github.io
@@ -11,26 +11,32 @@ categories:
   - 文章
 tags:
   - 悦读
-no-photos: 'https://random.52ecy.cn/randbg.php?size=1&rid-站点导航'
-date: 2020-12-15T00:06:38.000Z
-date updated: '2020-12-31T19:35:16+08:00'
+no-photos: 'https://random.52ecy.cn/randbg.php?size=1&rid-English-Version'
+date: 2020-12-29T22:39:15.000Z
+date updated: '2020-12-29T22:40:54+08:00'
 
 ---
 
-[[English-Version]]
+[[index|Chinese-Version]]
 
 这里是站点导航，为了视图和反向链接的查找方便。
 
 ## 安装与配置
 
-- mkdocs: [[README-zh]]
+- mkdocs:  [[README-en]]
 
 - hexo: [[hexo项目安装与配置]]
+
+## 写文章
+
+[[写文章]]
+[[hexo项目部署]]
+[[自我bug排除和修复]]
 
 ## 作者备忘
 
 [[项目备忘]]
 
-## rss 订阅
+## rss
 
 你可以使用rss阅读器来进行阅读
