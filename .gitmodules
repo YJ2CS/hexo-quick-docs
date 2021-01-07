@@ -1,0 +1,3 @@
+[submodule "docs/.obsidian"]
+	path = docs/.obsidian
+	url = https://github.com/YJ2CS/.obsidian.git
