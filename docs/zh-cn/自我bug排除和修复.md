@@ -11,19 +11,58 @@ categories:
   - 文章
 tags:
   - 悦读
-no-photos: 'https://random.52ecy.cn/randbg.php?size=1&rid-出现bug的自我检查修复'
+no-photos: https://random.52ecy.cn/randbg.php?size=1&rid-出现bug的自我检查修复
 date: 2020-12-28T20:38:44.000Z
-date updated: '2020-12-30T00:12:31+08:00'
+date updated: '2021-01-12T12:49:09+08:00'
 
 ---
 
 您可能是从[[hexo项目安装与配置]]跳转过来的。
 
-## 初始化server失败
+## 增加proxy
 
-一个自我排除问题方法-使用 npm-check 更新项目依赖.
+您可能在某些地区无法下载node，于是您可能要增加一个代理：
+
+## nvm增加proxy
+
+nvm设置代理
+
+```shell
+ nvm proxy 127.0.0.1:7890
+ nvm install 14.5.4
+```
+
+### 安装 nrm
+
+```cmd
+npm i -g nrm
+```
+
+### nrm查看下载镜像源
+
+```cmd
+nrm ls
+```
+
+### nrm切换镜像源
+
+```cmd
+nrm use taobao
+```
+
+## 初始化server失败-使用 npm-check 更新项目依赖
+
+使用 npm-check 更新项目依赖是一个常用的自我排除问题方法。
 
 在网站项目根目录运行
+
+安装 npm-check
+
+```cmd
+npm i -g npm-check
+```
+
+检查更新
 
 ```bash
 npm-check -u
@@ -54,9 +93,7 @@ hexo clean
 
 ## 安装node js相关依赖时出现了问题
 
-当您安装了错误的node依赖，或者您遇到了未知bug，可以尝试下面的修复方法
-
-**重新安装node依赖**
+当您安装了错误的node依赖，或者您遇到了未知bug，可以尝试**重新安装node依赖**
 
 linux中:
 
@@ -71,7 +108,7 @@ windows中:
 npm i
 ```
 
-## git push过程中出现了问题
+## git push过程中出现了问题-单次提交文件体积过大
 
 当您尝试git push到远程仓库，发现单次提交文件体积过大，提交失败，可以尝试以下解决方案
 

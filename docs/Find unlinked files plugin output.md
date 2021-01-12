@@ -1,6 +1,5 @@
 - [[欢迎使用易码]]
 - [[关于图片的说明]]
-- [[templatorDaily]]
 - [[templator]]
 - [[WhatIsThis]]
 - [[Vercel-Hexo-免费搭建自用博客保姆级教程]]

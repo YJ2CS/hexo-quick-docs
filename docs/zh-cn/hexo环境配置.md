@@ -11,9 +11,9 @@ categories:
   - 文章
 tags:
   - 悦读
-no-photos: 'https://random.52ecy.cn/randbg.php?size=1&rid-nodejs环境配置'
+no-photos: https://random.52ecy.cn/randbg.php?size=1&rid-nodejs环境配置
 date: 2020-12-30T22:42:43.000Z
-date updated: '2020-12-31T19:12:08+08:00'
+date updated: '2021-01-12T12:51:34+08:00'
 
 ---
 
@@ -22,41 +22,19 @@ date updated: '2020-12-31T19:12:08+08:00'
 
 点击回到hexo项目的配置文档: [[hexo项目安装与配置]]
 
-安装nvm，这一步在Linux上十分简便，
+## 安装nvm
 
-在Windows上推荐使用[coreybutler/nvm-windows](https://github.com/coreybutler/nvm-windows)
+这在Linux上十分简便，见[nvm-sh/nvm: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions - <https://github.com/](https://github.com/nvm-sh/nvm)>
 
-## nvm切换到nodejs 15.5.0
+在Windows上推荐使用[coreybutler/nvm-windows: A node.js version management utility for Windows. Ironically written in Go. - <https://github.com/](https://github.com/coreybutler/nvm-windows)>
+
+## 使用nvm下载nodejs
 
 ```shell
 nvm ls
-nvm uninstall 15.5.0
-nvm install 15.5.0
-nvm use 15.5.0
-```
-
-## 安装 nrm
-
-```cmd
-npm i -g nrm
-```
-
-## nrm查看下载镜像源
-
-```cmd
-nrm ls
-```
-
-## nrm切换镜像源
-
-```cmd
-nrm use taobao
-```
-
-## 安装 npm-check
-
-```cmd
-npm i -g npm-check
+nvm uninstall 14.5.4
+nvm install 14.5.4
+nvm use 14.5.4
 ```
 
 ## npm 安装所有依赖
@@ -66,12 +44,6 @@ npm i
 ```
 
 ## 测试环境安装是否成功
-
-建议您全局安装hexo
-
-```bash
-$ npm install -g hexo-cli
-```
 
 使用下面的这条命令，部署hexo的本地server，着能够测试你的环境是否全部安装完成，安装是否存在问题。
 
@@ -87,9 +59,20 @@ $ hexo clean && hexo s -debug
 (node:11248) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
 ```
 
-### 部署本地server失败解决方法
+- tips: 您可以选择全局安装hexo
 
-如果您在上一步初始化server时候出现了问题，您可以查看这一个步骤来尝试解决您的问题：[[自我bug排除和修复]]
+  ```bash
+  $ npm install -g hexo-cli
+  ```
+
+## 配置过程出现问题？
+
+在配置过程中，可能会出现
+
+- 部署本地server失败
+- 无法访问nodejs网站，从而无法下载nodejs依赖
+
+解决方法：您可以查看这一个步骤来尝试解决您的问题：[[自我bug排除和修复]]
 
 至此，您已经初步配置好环境了。
 
