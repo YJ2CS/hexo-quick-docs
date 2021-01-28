@@ -13,7 +13,7 @@ tags:
   - 悦读
 no-photos: https://random.52ecy.cn/randbg.php?size=1&rid-出现bug的自我检查修复
 date: 2020-12-28T20:38:44.000Z
-date updated: '2021-01-12T12:49:09+08:00'
+date updated: '2021-01-28T11:08:35+08:00'
 
 ---
 
@@ -23,16 +23,18 @@ date updated: '2021-01-12T12:49:09+08:00'
 
 您可能在某些地区无法下载node，于是您可能要增加一个代理：
 
-## nvm增加proxy
+### nvm增加proxy
 
 nvm设置代理
 
 ```shell
- nvm proxy 127.0.0.1:7890
- nvm install 14.5.4
+nvm proxy 127.0.0.1:7890
+nvm install 14.5.4
 ```
 
-### 安装 nrm
+### n增加proxy
+
+## 安装 nrm
 
 ```cmd
 npm i -g nrm

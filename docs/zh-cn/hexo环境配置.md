@@ -13,7 +13,7 @@ tags:
   - 悦读
 no-photos: https://random.52ecy.cn/randbg.php?size=1&rid-nodejs环境配置
 date: 2020-12-30T22:42:43.000Z
-date updated: '2021-01-12T12:51:34+08:00'
+date updated: '2021-01-28T11:08:07+08:00'
 
 ---
 
@@ -22,13 +22,17 @@ date updated: '2021-01-12T12:51:34+08:00'
 
 点击回到hexo项目的配置文档: [[hexo项目安装与配置]]
 
-## 安装nvm
+## 安装nodejs的包管理器nvm/n
 
-这在Linux上十分简便，见[nvm-sh/nvm: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions - <https://github.com/](https://github.com/nvm-sh/nvm)>
+在Linux上建议安装n:
 
-在Windows上推荐使用[coreybutler/nvm-windows: A node.js version management utility for Windows. Ironically written in Go. - <https://github.com/](https://github.com/coreybutler/nvm-windows)>
+Linux上安装nvm：这十分简便，见[nvm-sh/nvm: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions - <https://github.com/](https://github.com/nvm-sh/nvm)>
 
-## 使用nvm下载nodejs
+在Windows上推荐使用nvm:[coreybutler/nvm-windows: A node.js version management utility for Windows. Ironically written in Go. - <https://github.com/](https://github.com/coreybutler/nvm-windows)>
+
+## 使用nvm/n下载nodejs
+
+对于nvm：
 
 ```shell
 nvm ls
