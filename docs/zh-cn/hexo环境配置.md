@@ -13,7 +13,7 @@ tags:
   - 悦读
 no-photos: https://random.52ecy.cn/randbg.php?size=1&rid-nodejs环境配置
 date: 2020-12-30T22:42:43.000Z
-date updated: '2021-01-28T11:08:07+08:00'
+date updated: '2021-01-28T11:13:22+08:00'
 
 ---
 
@@ -24,7 +24,7 @@ date updated: '2021-01-28T11:08:07+08:00'
 
 ## 安装nodejs的包管理器nvm/n
 
-在Linux上建议安装n:
+在Linux上建议安装n，这十分简便，见:
 
 Linux上安装nvm：这十分简便，见[nvm-sh/nvm: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions - <https://github.com/](https://github.com/nvm-sh/nvm)>
 
