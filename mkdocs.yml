@@ -57,7 +57,7 @@ theme: # 自定义主题：通过安装python包的方式添加主题，requirem
   features: # 特性
     - navigation.expand #激活时，左侧栏将默认展开所有可折叠小节，因此用户不必手动执行此操作
     - navigation.instant #激活即时加载时，所有内部链接的点击将截获，并通过XHR发送，而无需完全重新加载页面
-    - navigation.tabs # 激活选项卡时，顶级部分将呈现在大屏幕上标题下方的菜单层中（但当侧边栏隐藏时不会）
+    # - navigation.tabs # 激活选项卡时，顶级部分将呈现在大屏幕上标题下方的菜单层中（但当侧边栏隐藏时不会）
     - header.autohide #自动隐藏顶部，给阅读留下空间
   palette: # 调色板
     scheme: slate
@@ -67,7 +67,7 @@ theme: # 自定义主题：通过安装python包的方式添加主题，requirem
     text: Roboto
     code: Roboto Mono
   # icon和徽标
-  favicon: custom/favicon.jpg
+  favicon: cdn/favicon.jpg
 # From Material 5.x on, icons are inlined into the HTML and CSS as SVGs. Some
 # icons that are part of the HTML can be configured and replaced
   icon:
