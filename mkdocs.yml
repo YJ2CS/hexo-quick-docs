@@ -96,9 +96,7 @@ plugins:
   - exclude:
       glob:
         #- exclude/this/path/*
-        - _drafts/*
-        - _daily/*
-        - _template/*
+        - "others/"
         - "*.tmp"
         - "*.pdf"
         - "*.gz"
