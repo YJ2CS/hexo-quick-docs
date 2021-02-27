@@ -20,15 +20,15 @@
 
 #==================== Personal information ===================================
 # Project information
-site_name: conf-docs
-site_url: https://YJ2CS.github.io/conf-docs
+site_name: hexo-quick-docs
+site_url: https://YJ2CS.github.io/hexo-quick-docs
 site_author: YJ2CS
 site_description: >-
-  to learn conf-docs
+  to learn hexo-quick-docs
 
 # Repository
-repo_name: YJ2CS/conf-docs
-repo_url: https://github.com/YJ2CS/conf-docs
+repo_name: YJ2CS/hexo-quick-docs
+repo_url: https://github.com/YJ2CS/hexo-quick-docs
 edit_uri: ""
 
 # ================== docs_dir Configuration ============================
