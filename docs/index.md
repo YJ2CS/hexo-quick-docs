@@ -25,7 +25,7 @@ date updated: '2020-12-31T19:35:16+08:00'
 
 - mkdocs: [[README-zh]]
 
-- hexo: [[hexo项目安装与配置]]
+- hexo: [[安装与配置]]
 
 ## 作者备忘
 
