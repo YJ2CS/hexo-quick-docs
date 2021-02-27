@@ -2,7 +2,7 @@
 title: 更换hexo的默认server端口
 url: 更换hexo的默认server端口
 author: YJ2CS
-avatar: /custom/avatar.webp
+avatar: /cdn/avatar.webp
 authorLink: YJ2CS.github.io
 authorAbout: 愿青年摆脱了冷气，只是向前走！
 authorDesc: 愿青年摆脱了冷气，只是向前走！

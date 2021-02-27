@@ -251,14 +251,14 @@ links:
     desc: 
     items:
     - url: https://blog.csdn.net/cungudafa
-      img: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg
+      img: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/cdn/cungudafa.jpg
       name: CSDN
       desc: 我的技术栈
   - group: 友情链接
     desc: 
     items:
     - url: https://blog.csdn.net/cungudafa
-      img: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg
+      img: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/cdn/cungudafa.jpg
       name: CSDN
       desc: 我的技术栈
     - name: 总站导航
@@ -280,7 +280,7 @@ mylinkinfo:
   name: cungudafa
   desc: 一个学习记录者
   url: https://cungudafa.top
-  img: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg
+  img: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/cdn/cungudafa.jpg
 ```
 
 ### 菜单导航配置
@@ -330,7 +330,7 @@ social:
   # sina: {url: http://weibo.com/3829198906/info, img: /img/social/sina.png}
   bilibili: {url: https://space.bilibili.com/430247358, img: /img/social/bilibili.png}
   #wangyiyun: {url: https://music.163.com/#/user/home?id=337394988, img: /img/social/wangyiyun.png}
-  wechat: {url: /#, qrcode: /img/custom/cungudafa.png, img: /img/social/wechat.png}
+  wechat: {url: /#, qrcode: /img/cdn/cungudafa.png, img: /img/social/wechat.png}
 
 #social  url, img 移动端配置
 msocial:
@@ -459,7 +459,7 @@ artitalk:
   username: cungudafa # Leancloud中设置的用户名
   placeholder1: 没有密码，不能评论！ # 密码框提示语
   lazy: 1 # 加载动画1:加载,0:取消加载
-  img: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg #用户默认头像
+  img: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/cdn/cungudafa.jpg #用户默认头像
   bgimg: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich16.gif # 输入框小动画
   # 极简黑白主题minimalist、渐变主题gradient、壁纸wallpaper 
   # 参考 https://blog.csdn.net/cungudafa/article/details/106224223
@@ -487,11 +487,11 @@ donate:
   title: 谢谢饲主了喵~
   message: 我能想到最浪漫的事，就是我喝奶茶你付钱~
   paypal: #https://www.paypal.me/hojuncn
-  alipay: /img/custom/donate/AliPay.jpg #大图
-  alipayQR: /img/custom/donate/AliPayQR.jpg
-  wechat: /img/custom/donate/WeChatPay.png #大图
-  wechatQR: /img/custom/donate/WeChanQR.jpg
-  wechatSQ: /img/custom/donate/WeChanSQ.jpg
+  alipay: /img/cdn/donate/AliPay.jpg #大图
+  alipayQR: /img/cdn/donate/AliPayQR.jpg
+  wechat: /img/cdn/donate/WeChatPay.png #大图
+  wechatQR: /img/cdn/donate/WeChanQR.jpg
+  wechatSQ: /img/cdn/donate/WeChanSQ.jpg
 ```
 
 `donates` 页是单独的打赏页面（可选），如果在你的博客 `source` 目录下还没有 `donate/index.md` 文件，那么你就需要新建一个，命令如下：
@@ -624,7 +624,7 @@ date: 2020-05-20 09:25:00
 title: 阿里云部署hexo完整教程
 author: cungudafa
 authorLink: 'https://cungudafa.top'
-avatar: 'https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg'
+avatar: 'https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/cdn/cungudafa.jpg'
 authorAbout: 姑，一个学习记录者
 tags:
   - nginx
