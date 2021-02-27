@@ -74,6 +74,8 @@ theme: # 自定义主题：通过安装python包的方式添加主题，requirem
     logo: logo
 # ================= theme Configuration END=====================
 
+hide:
+  - navigation # Hide navigation
 
 #====================== mkdocs Plugins =========================
 plugins:
